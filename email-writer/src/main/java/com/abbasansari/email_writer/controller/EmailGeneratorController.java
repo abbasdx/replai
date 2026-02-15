@@ -1,7 +1,9 @@
 package com.abbasansari.email_writer.controller;
 
+import com.abbasansari.email_writer.model.ApiResponse;
 import com.abbasansari.email_writer.model.EmailRequest;
 import com.abbasansari.email_writer.service.EmailGeneratorService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +22,17 @@ public class EmailGeneratorController {
     }
 
     @PostMapping("/generate")
-    public ResponseEntity<String> generateEmail(@RequestBody EmailRequest emailRequest) {
+    public ResponseEntity<ApiResponse> generateEmail(
+            @Valid @RequestBody EmailRequest emailRequest) {
+
         String response = emailGeneratorService.generateEmailReply(emailRequest);
-        return ResponseEntity.ok(response);
+
+        ApiResponse apiResponse = new ApiResponse(
+                true,
+                "Email generated successfully",
+                response
+        );
+
+        return ResponseEntity.ok(apiResponse);
     }
 }
