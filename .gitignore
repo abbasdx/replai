@@ -1,0 +1,128 @@
+```gitignore
+# ==========================================
+# GENERAL
+# ==========================================
+HELP.md
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# JAVA / SPRING BOOT / MAVEN
+# ==========================================
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# STS
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.properties
+
+# ==========================================
+# GRADLE
+# ==========================================
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ==========================================
+# REACT / NODE.JS
+# ==========================================
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vite/
+coverage/
+.npm/
+.yarn/
+.pnpm-store/
+
+# React local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==========================================
+# FLUTTER / DART
+# ==========================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.flutter-automation/
+
+# Flutter generated files
+*.freezed.dart
+*.g.dart
+
+# Flutter build output
+build/
+
+# ==========================================
+# ANDROID
+# ==========================================
+local.properties
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+
+# ==========================================
+# IOS / XCODE
+# ==========================================
+ios/Flutter/.last_build_id
+ios/Flutter/ephemeral/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# ==========================================
+# VISUAL STUDIO CODE
+# ==========================================
+.vscode/
+
+# ==========================================
+# NETBEANS
+# ==========================================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+*.tmp
+*.swp
+*.bak
+*.orig
