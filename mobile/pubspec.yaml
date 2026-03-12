@@ -1,0 +1,39 @@
+name: email_writer_flutter
+description: "Replai — Minimal AI Email Reply Generator."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  http: ^1.2.1
+  receive_sharing_intent: ^1.8.1
+  flutter_dotenv: ^5.1.0
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/logo.png
+    - assets/open.png
+    - assets/headshot.jpg
+    
+
+flutter_launcher_icons:
+  image_path: "assets/logo.png"
+  android: "launcher_icon"
+  ios: true
+  image_path_ios: "assets/logo.png"
